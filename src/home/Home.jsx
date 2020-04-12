@@ -20,7 +20,7 @@ class Home extends React.Component {
         </form>;
     }
     enter() {
-        this.props.history.push("/tests");
+        this.props.history.push("/welcome");
     }
 }
 
