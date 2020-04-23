@@ -1,12 +1,5 @@
 import React from "react";
 
-const visible = {
-    visibility:"visible"
-}
-
-const hidden = {
-    visibility:"hidden"
-}
 
 
 class Tests extends React.Component {
@@ -29,8 +22,8 @@ class Tests extends React.Component {
     }
 
     Result(){
-        let styleName = (document.getElementById("result-string"))?style={visible}:style={visible};
-        this.setState({style: styleName});
+        // let styleName = (document.getElementById("result-string")).className = 'd-none';
+        // this.setState({style: styleName});
     }
 
     render() {
@@ -45,7 +38,7 @@ class Tests extends React.Component {
             </div>
             <div> 
                 <button type="button" id="finish" class="btn btn-primary btn-lg btn-block mt-3" onClick={() => {this.Result()}}>Завершить тест</button>
-                <p id="result-string" class="font-weight-bold" style={hidden} >Результат: {this.state.score}</p>
+                <p id="result-string" ><b>Результат: {this.state.score}</b></p>
             </div>
             
         </div>;
