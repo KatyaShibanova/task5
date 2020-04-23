@@ -26,6 +26,7 @@ class Tests extends React.Component {
         // this.setState({style: styleName});
     }
 
+
     render() {
         return <div className="p-5">
             <div><p class="font-weight-bold">Q1</p>
@@ -43,6 +44,7 @@ class Tests extends React.Component {
             
         </div>;
     }
+    
 
     
     

@@ -25,8 +25,8 @@ class Home extends React.Component {
         const { email: {value: emailValue}, password: {value: passwordValue} } = window.userForm.elements;
         console.log([emailValue, passwordValue]);
         this.service.Enter(emailValue, passwordValue).then(data => {
-            console.log(data)
-            // this.props.history.push("/welcome");
+            console.log(data);
+            this.props.history.push("/welcome");
         }).catch(error => {
             //ошибка
         })
